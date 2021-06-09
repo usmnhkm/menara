@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+/* HEADER SECTION */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: #4b85f1;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+}
+
+.header-left {
+  float: left;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 3px;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+  font-size: 16px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-left h1 {
+  line-height: 20px;
+  font-size: 25px;
+  color: white;
+  display: block;
+  float: right;
+}
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(logo4.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+/* bagian menu*/
+.menu-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.menu {
+  float: left;
+  width: 23%;
+  background-color: rgb(102, 142, 229);
+  border-radius: 25px;
+  margin-right: 2%;
+}
+
+.menu-layout {
+  padding: 25px;
+}
+
+.menu-avatar {
+  position: relative;
+}
+
+.menu-avatar p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+  border-radius: 50%; /*properties untuk membuat foto menjadi lingkaran*/
+}
+
+.menu-name {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(19, 37, 139);
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.menu-description {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #34495E;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+/* bagian extra 2 saya coba ngikutin kayak yang dari latihan*/
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #edeff1;
+}
+
+.message {
+  padding: 15px 70px;
+  background-color: #414df5;
+  cursor: pointer;
+  box-shadow: 0 7px #27168a;
+  font-size: 16px;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/*FOOTER SECTION*/
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 24px;
+  display: ruby-text-container;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #4b85f1;
+}
