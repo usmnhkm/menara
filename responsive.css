@@ -12,6 +12,15 @@
   .heading h2 {
     font-size: 20px;
   }
+
+  .menu {
+    float: left;
+    width: 46%;
+    background-color: rgb(102, 142, 229);
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
 }
 
 /* Untuk Smartphone */
@@ -30,6 +39,14 @@
   
   .facebook {
     margin-bottom: 10px;
+  }
+
+  .menu {
+    float: left;
+    width: 100%;
+    background-color: rgb(102, 142, 229);
+    border-radius: 25px;
+    margin-top: 2%;
   }
   
   .top-wrapper {

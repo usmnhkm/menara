@@ -152,6 +152,29 @@ header {
   color: #34495E;
 }
 
+/* bagian pilih menu */
+.select-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+  background-color: #edeff1;
+}
+
+.select {
+  padding: 5px 70px;
+  background-color: #f58931;
+  cursor: pointer;
+  box-shadow: 0 7px #9e5706;
+  font-size: 16px;
+  color: #fefeff;
+}
+
+.select:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
 .heading h3 {
   font-weight: normal;
 }
