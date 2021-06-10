@@ -1,75 +1,98 @@
-/* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-  
-  .heading h2 {
-    font-size: 20px;
-  }
 
-  .menu {
-    float: left;
-    width: 46%;
-    background-color: rgb(102, 142, 229);
-    border-radius: 25px;
-    margin-top: 2%;
-    margin-right: 2%;
-  }
+/* Untuk Tablet */
+
+@media all and (max-width: 1000px) {
+    .top-wrapper{
+        padding: 120px 0 90px;
+    }
+    .top-wrapper h1 {
+        font-size: 32px;
+    }
+    .heading h2 {
+        font-size: 20px;
+    }
+    .menus{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    .menu {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 2%;
+    }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-  .lesson {
-    width: 100%;
-  }
-  
-  footer {
-    text-align: center;
-  }
-  
-  .btn {
-    width: 100%;
-  }
-  
-  .facebook {
-    margin-bottom: 10px;
-  }
+    .header-left h1{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .top-wrapper {
+        text-align: left;
+    }
 
-  .menu {
-    float: left;
-    width: 100%;
-    background-color: rgb(102, 142, 229);
-    border-radius: 25px;
-    margin-top: 2%;
-  }
-  
-  .top-wrapper {
-    text-align: left;
-  }
-  
-  /* Tambahkan CSS untuk header-right */
-  .header-right {
-    display: none;
-  }
-  
-  /* Tambahkan CSS untuk menu-icon */
-  .menu-icon {
-    display: block;
-  }
-  
-  .top-wrapper h1 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  
-  .top-wrapper p {
-    font-size: 14px;
-    line-height: 20px;
-  }
+    .top-wrapper h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .top-wrapper p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Tambahkan CSS untuk header-right */
+    .header-right {
+        display: none;
+    }
+
+    /* Tambahkan CSS untuk menu-icon */
+    .menu-icon {
+        display: block;
+    }
+    .container{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .menus{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .menu {
+        border-radius: 16px;
+    }
+    
+    
+    footer {
+        text-align: center;
+    }
+
+    .btn {
+        width: 60%;
+    }
+    .facebook {
+        margin-bottom: 10px;
+    }
 }
+
+@media all and (max-width: 460px) {
+    .header-left h1{
+        font-size: 20px;
+    }
+    .top-wrapper{
+        padding: 100px 0 70px;
+    }
+    .menus{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .menu {
+        border-radius: 10px;
+        max-width: 18rem;
+    }
+}
+

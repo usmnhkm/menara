@@ -1,219 +1,237 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: "Lato";
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .clear {
-  clear: left;
+    clear: left;
 }
 
 .btn {
-  border-radius: 6px;
+    border-radius: 6px;
 }
 
+
 /* HEADER SECTION */
+
 header {
-  height: 65px;
-  width: 100%;
-  background-color: #4b85f1;
-  position :fixed;
-  top: 0;
-  z-index: 10;
+    height: 65px;
+    width: 100%;
+    background-color: #4b85f1;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .logo {
-  width: 100px;
+    width: 100px;
 }
 
 .header-left {
-  float: left;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 3px;
+    float: left;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3px;
 }
 
-.header-right {
-  float: right;
-  margin-right: -25px;
-  font-size: 16px;
+.header-right, .menu-icon {
+    float: right;
+    margin-right: -25px;
+    font-size: 16px;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+.header-right a, #hamburger {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
 }
 
 .header-left h1 {
-  line-height: 20px;
-  font-size: 25px;
-  color: white;
-  display: block;
-  float: right;
+    line-height: 20px;
+    font-size: 25px;
+    color: white;
+    display: block;
+    float: right;
 }
+
 .header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon{
+    display: none;
 }
 
 .container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(logo4.jpg);
-  background-size: cover;
-  color: white;
-  text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 180px 0 100px 0;
+    background-image: url("img/logo4.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+    font-size: 45px;
+    letter-spacing: 5px;
+    /* margin-bottom: 10px; */
 }
 
 .top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.top-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: black;
+    opacity: .5;
 }
 
 /* bagian menu*/
+.menus{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    justify-items: center;
+}
+.menu {
+    border-radius: 10px;
+    border: 1px solid rgb(201, 200, 200);
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+
+.card{
+    box-shadow: rgb(49 53 59 / 70%) 1px 2px 6px 0px;
+    transition: all .3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: rgb(49 53 59 / 70%) 3px 6px 6px 0px;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-title {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.card-text {
+    margin-top: -17px;
+    font-size: 12px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .menu-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.btn-pilih {
+    background-color: rgb(6, 66, 176);
+    color: white;
+    padding: 4px 15px;
+    cursor: pointer;
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
 }
 
 .heading h2 {
-  font-weight: normal;
-}
-
-.menu {
-  float: left;
-  width: 23%;
-  background-color: rgb(102, 142, 229);
-  border-radius: 25px;
-  margin-right: 2%;
-}
-
-.menu-layout {
-  padding: 25px;
-}
-
-.menu-avatar {
-  position: relative;
-}
-
-.menu-avatar p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-  border-radius: 50%; /*properties untuk membuat foto menjadi lingkaran*/
-}
-
-.menu-name {
-  font-size: 20px;
-  color: #fff;
-  background-color: rgb(19, 37, 139);
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.menu-description {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #34495E;
-}
-
-/* bagian pilih menu */
-.select-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-  background-color: #edeff1;
-}
-
-.select {
-  padding: 5px 70px;
-  background-color: #f58931;
-  cursor: pointer;
-  box-shadow: 0 7px #9e5706;
-  font-size: 16px;
-  color: #fefeff;
-}
-
-.select:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+    font-weight: normal;
 }
 
 .heading h3 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
+
 /* bagian extra 2 saya coba ngikutin kayak yang dari latihan*/
+
 .message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-  background-color: #edeff1;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: #edeff1;
 }
 
 .message {
-  padding: 15px 70px;
-  background-color: #414df5;
-  cursor: pointer;
-  box-shadow: 0 7px #27168a;
-  font-size: 16px;
+    padding: 15px 70px;
+    background-color: #414df5;
+    cursor: pointer;
+    box-shadow: 0 7px #27168a;
+    font-size: 16px;
+    color: white;
 }
 
 .message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+    position: relative;
+    top: 7px;
+    box-shadow: none;
 }
 
+
 /*FOOTER SECTION*/
+
 footer img {
-  width: 125px;
+    width: 125px;
 }
 
 footer p {
-  color: #ffffff;
-  font-size: 24px;
-  display: ruby-text-container;
+    color: #ffffff;
+    font-size: 24px;
+    display: ruby-text-container;
 }
 
 footer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #4b85f1;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4b85f1;
 }
