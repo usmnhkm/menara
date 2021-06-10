@@ -1,4 +1,4 @@
-# menara.github.io
+# rm. menara kudus
 Project membuat halaman web sederhana menggunakan HTML dan CSS
 <br/>dalam rangka penugasan digitalent scholarship kominfo 2021
 
