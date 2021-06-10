@@ -1,10 +1,13 @@
 # menara.github.io
 Project membuat halaman web sederhana menggunakan HTML dan CSS
-dalam rangka penugasan digitalent scholarship kominfo 2021
+<br/>dalam rangka penugasan digitalent scholarship kominfo 2021
 
-credit to:
-Hakim Usmanto
-Haikal Gibran Akbar
-Fuad Maulana
-Fitria Sulistiya
-Hardiyanti Anwar
+<br/>credit to:
+<br/><br/>
+<ol>
+<li>Hakim Usmanto</li>
+<li>Haikal Gibran Akbar</li>
+<li>Fuad Maulana</li>
+<li>Fitria Sulistiya</li>
+<li>Hardiyanti Anwar</li>
+</ol>
